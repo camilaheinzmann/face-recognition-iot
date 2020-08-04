@@ -6,19 +6,19 @@ A finalidade deste projeto foi desenvolver um sistema de monitoramento de ambien
 <img width="auto" src="https://i.imgur.com/58l9wvB.png">
 
 <p align="center">
- <a href="#instrucoes">Instruções de Execução</a> •  <a href="#requisitos">Requisitos</a> •  <a href="#alteracoes">Alterações necessárias</a> •  <a href="#informacoes">Informações gerais</a> 
+ <a href="#instruções-de-execução">Instruções de Execução</a> •  <a href="#requisitos">Requisitos</a> •  <a href="#alterações-necessárias">Alterações necessárias</a> •  <a href="#informações-gerais">Informações gerais</a> 
 </p>
 
 ------------
 
-<h3 id=#instrucoes>Instruções de execução</h3>
+<h3>Instruções de execução</h3>
 <p>Reconhecedor facial desenvolvido na linguagem de programação Python, baseado no código oficial disponibilizado por <a href="https://github.com/ageitgey">Adam Geitgey</a>, criador da biblioteca Face Recognition, utilizada no sistema.</p>
 
 <p>Este código foi baseado no código <a href="https://github.com/ageitgey/face_recognition/blob/master/examples/facerec_from_webcam_faster.py">facerec_from_webcam_faster</a> de Adam Geitgey. Para mais informações sobre funcionamento e instalação, acessar o código oficial. </p>
 
 ------------
 
-<h3 id=#requisitos>Requisitos</h3>
+<h3>Requisitos</h3>
 <ul>
 <li>Raspberry Pi 3 model B (usada neste projeto) conectada à internet;</li>
 <li>Python instalado;</li>
@@ -27,10 +27,9 @@ A finalidade deste projeto foi desenvolver um sistema de monitoramento de ambien
 <li>Canal na plataforma <a href="https://thingspeak.com">Thingspeak</a>.</li>
 </ul>
 
-
 ------------
 
-<h3 id=#alteracoes>Alterações necessárias</h3>
+<h3>Alterações necessárias</h3>
 <p>Como o reconhecedor facial funciona utilizando a foto do indivíduo conhecido, deverá ser armazenada a imagem do indivíduo escolhido na pasta em que o programa está localizado.</p>
 
 <h5>Fazer as devidas alterações nos nomes das pessoas conhecidas nas variáveis e no arquivo *.jpg* (linhas 9 a 16 do projeto). </h5>
@@ -57,7 +56,7 @@ Com os requisitos cumpridos, executar o programa reconhecedor_facial.py em linha
 
 ------------
 
-<h3 id=#informacoes>Informações gerais</h3> 
+<h3>Informações gerais</h3> 
 <p>Neste projeto, para fins de desempenho, o sistema não possui interface gráfica (como a encontrada no código oficial). Ao realizar a detecção de um rosto, a identificação atribuída para o indivíduo reconhecido ou a identificação referente a "desconhecido" será escrita no retorno do programa e poderá ser conferida no canal criado na plataforma de nuvem.</p>
 
 <p>A biblioteca OpenCV oferece visualização em vídeo dos reconhecimentos faciais e esta opção de visualização, além de toda a documentação sobre a biblioteca Face Recognition, pode ser encontrada na <a href="https://github.com/ageitgey/face_recognition/">página oficial </a> da biblioteca.</p>
