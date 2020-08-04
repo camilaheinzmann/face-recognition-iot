@@ -10,6 +10,7 @@ A finalidade deste projeto foi desenvolver um sistema de monitoramento de ambien
 </p>
 
 ------------
+
 <h3 id=#instrucoes>Instruções de execução</h3>
 <p>Reconhecedor facial desenvolvido na linguagem de programação Python, baseado no código oficial disponibilizado por <a href="https://github.com/ageitgey">Adam Geitgey</a>, criador da biblioteca Face Recognition, utilizada no sistema.</p>
 
@@ -18,13 +19,17 @@ A finalidade deste projeto foi desenvolver um sistema de monitoramento de ambien
 ------------
 
 <h3 id=#requisitos>Requisitos</h3>
-- Raspberry Pi 3 model B (usada neste projeto) conectada à internet;
-- Python instalado;
-- Bibliotecas <a href="https://github.com/opencv/opencv">OpenCV</a> e <a href="https://github.com/ageitgey/face_recognition/">Face Recognition</a> instaladas;
-- Dispositivo para captura de imagens (módulo de câmera para Raspberry Pi com conexão CSI baseado no módulo OV5647);
-- Canal na plataforma <a href="https://thingspeak.com">Thingspeak</a>.
+<ul>
+<li>Raspberry Pi 3 model B (usada neste projeto) conectada à internet;</li>
+<li>Python instalado;</li>
+<li>Bibliotecas <a href="https://github.com/opencv/opencv">OpenCV</a> e <a href="https://github.com/ageitgey/face_recognition/">Face Recognition</a> instaladas;</li>
+<li> Dispositivo para captura de imagens (módulo de câmera para Raspberry Pi com conexão CSI baseado no módulo OV5647);</li>
+<li>Canal na plataforma <a href="https://thingspeak.com">Thingspeak</a>.</li>
+</ul>
+
 
 ------------
+
 <h3 id=#alteracoes>Alterações necessárias</h3>
 <p>Como o reconhecedor facial funciona utilizando a foto do indivíduo conhecido, deverá ser armazenada a imagem do indivíduo escolhido na pasta em que o programa está localizado.</p>
 
@@ -51,6 +56,7 @@ url = 'https://api.thingspeak.com/update?api_key=XXXXXXXXXXXXXXXX&field1='
 Com os requisitos cumpridos, executar o programa reconhecedor_facial.py em linhas de comando ou com uma IDE específica.
 
 ------------
+
 <h3 id=#informacoes>Informações gerais</h3> 
 <p>Neste projeto, para fins de desempenho, o sistema não possui interface gráfica (como a encontrada no código oficial). Ao realizar a detecção de um rosto, a identificação atribuída para o indivíduo reconhecido ou a identificação referente a "desconhecido" será escrita no retorno do programa e poderá ser conferida no canal criado na plataforma de nuvem.</p>
 
